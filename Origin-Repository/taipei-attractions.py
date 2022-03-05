@@ -10,8 +10,6 @@ with open('data/taipei-attractions.json',encoding = 'utf-8') as file:
     result=json.load(file)
     Q=len(result["result"]["results"])
 
-
-
     for i in range(0,Q,1):
         name=result["result"]["results"][i]["stitle"]
         category=result["result"]["results"][i]["CAT2"]
